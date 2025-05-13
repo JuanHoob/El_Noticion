@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  border-color: black;
+  margin-bottom: 20px;
+}
+
+.cardProfile {
+  background-image: url(../assets/image/fondo_Perfil.jpg);
+  padding: 10px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 800px;
+  height: 600px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: auto;
+  word-wrap: break-word;
+  background-color: rgb(147, 126, 100);
+  font-size: 1em;
+  box-shadow: 15px;
+  overflow: hidden;
+}
+
+.icono {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-image: url(../assets/image/pin.png);
+  background-color: chartreuse;
+}
+
+.userInfo {
+  position: relative;
+  padding: 5px;
+  color: rgb(79, 39, 21);
+  overflow: auto;
+  height: 200px;
+}
+
+.userInfo h4 {
+  padding: 5px;
+}
+
+.menbresiaProfile {
+  padding: 10px;
+  text-align: right;
+}
+
+.styles.bio {
+  text-align: justify;
+}
+
+.headProfile {
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: rgba(139, 129, 113, 0.5);
+  color: rgb(59, 27, 12);
+  overflow: auto;
+}
+
+.headProfile img {
+  border: 7px solid rgb(253, 250, 250);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 10px;
+}
+
+.footerProfile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(139, 129, 113, 0.5);
+  overflow: auto;
+}
+
+.botEliminar {
+  font-family: "Noticia", sans-serif;
+  margin: 2px;
+  width: 180px;
+  height: 30px;
+  padding: 9px;
+  box-sizing: border-box;
+  font-size: 13px;
+  border-radius: 8px;
+  color: rgb(47, 22, 9);
+  border: 2px solid #5b3b1a;
+  background-color: #efeeee;
+}
+
+.botModificar {
+  font-family: "Noticia", sans-serif;
+  text-align: center;
+  width: 180px;
+  height: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 13px;
+  border-radius: 8px;
+  color: rgb(47, 22, 9);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 2px solid #5b3b1a;
+  background-color: #efeeee;
+  content: "Editar Perfil";
+}
+
+.botAvatar {
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  font-family: "Noticia", sans-serif;
+  text-align: center;
+  align-items: center;
+  width: 180px;
+  height: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 13px;
+  border-radius: 8px;
+  color: rgb(47, 22, 9);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 2px solid #5b3b1a;
+  overflow-wrap: break-word;
+  background-color: #efeeee;
+}
+
+.botAvatar div:last-child {
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+  .containerProfile,
+  .footerProfile {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .headProfile img {
+      font-size: 1rem;
+    }
+  }
+}

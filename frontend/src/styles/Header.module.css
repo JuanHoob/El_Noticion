@@ -1,0 +1,216 @@
+/* ***************** */
+/*      BANNER       */
+/* ***************** */
+/*Titulo El Noticion*/
+h2 {
+  font-family: "Antic", sans-serif;
+  font-size: 100px;
+}
+
+header {
+  text-align: center;
+  background-image: url("../src/assets/image/pila-periodicos.jpg");
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+}
+header div {
+  padding: 50px;
+  max-width: 100rem;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 1.2;
+}
+header h3 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.navLink:not(:last-child) {
+  margin-right: 10px;
+}
+
+nav,
+.navBar {
+  font-family: "Antic", sans-serif;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #7d6557;
+
+  .fotoPerfil img {
+    display: flex;
+    border-radius: 60px;
+    width: 65px;
+    height: 65px;
+    margin-left: 20px;
+  }
+  .botProfile {
+    border: 0px solid #553513;
+    width: 150px;
+  }
+}
+/*Foto avartar*/
+.avatarNav {
+  display: flex;
+  width: 100px;
+  height: 70px;
+}
+.avatarNav {
+  display: flex;
+  width: 100px;
+  height: 70px;
+  position: relative; /* Establecer posición relativa para el contenedor */
+}
+.avatarNav::after {
+  content: "Editar Perfil"; /* Contenido del mensaje */
+  position: absolute; /* Posición absoluta en relación con el contenedor padre */
+  bottom: -30px; /* Distancia del mensaje desde el borde superior del contenedor */
+  left: 50%; /* Alineación horizontal en el centro */
+  transform: translateX(-50%); /* Centrar horizontalmente el mensaje */
+
+  color: rgb(73, 60, 60); /* Color del texto del mensaje */
+  padding: 5px; /* Espaciado interno del mensaje */
+  border-radius: 5px; /* Bordes redondeados del mensaje */
+  font-size: 15px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.avatarNav:hover::after {
+  opacity: 1;
+}
+
+.plumaIcono {
+  background-image: url(../assets/image/pluma.png);
+  width: 30px;
+  height: 60px;
+  padding: 18px;
+}
+
+nav a,
+.navLink {
+  display: inline-block;
+  font-family: "Antic", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  width: 150px;
+  color: #fcd0b7;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #fcd0b7;
+}
+
+nav a:hover,
+.navLink:hover {
+  background-color: #3c2f27;
+  color: #ccbdb5;
+  box-shadow: 1px 4px 20px -3px rgba(224, 217, 198, 0.81);
+  -webkit-box-shadow: 1px 4px 20px -3px rgba(224, 217, 198, 0.81);
+  -moz-box-shadow: 1px 4px 20px -3px rgba(224, 217, 198, 0.81);
+}
+
+#bienvenido {
+  font-family: "Antic", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  margin-right: 50px;
+  margin-left: 50px;
+  color: #fcd0b7;
+}
+
+.buttonLink {
+  display: inline-block;
+  font-family: "Antic", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  width: 150px;
+  color: #fcd0b7;
+  background-color: #7d6557;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid #fcd0b7;
+  margin-right: 15px;
+}
+.buttonLink:hover {
+  background-color: #3c2f27;
+  color: #ccbdb5;
+  box-shadow: 1px 4px 20px -3px rgba(224, 217, 198, 0.81);
+  -webkit-box-shadow: 1px 4px 20px -3px rgba(224, 217, 198, 0.81);
+  -moz-box-shadow: 1px 4px 20px -3px rgba(224, 217, 198, 0.81);
+}
+
+/*Cajon de busqueda*/
+.searchContainer input {
+  flex: 1;
+  font-family: "Antic", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f7e6c4;
+  padding: 6px;
+  margin-right: -40px;
+  width: 600px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/*@medias*/
+@media only screen and (max-width: 700px) {
+  header {
+    height: 30rem; /*ajusta altura*/
+  }
+
+  header div {
+    padding: 20px;
+  }
+  header h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Ajusta fuente en móviles */
+  }
+
+  .navBar,
+  .searchContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 430px) {
+    h2 {
+      font-size: 60px;
+    }
+  }
+
+  .navLink {
+    width: 100%;
+    text-align: center; /* Centra el texto */
+  }
+  .searchContainer,
+  button,
+  .rightLinks {
+    width: 100%;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  h2 {
+    font-size: 60px;
+  }
+}

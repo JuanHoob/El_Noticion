@@ -1,0 +1,99 @@
+.entrancesContenedor {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  margin: auto;
+  background-image: url(../assets/image/pin.png);
+  background-size: cover; /* Ajusta el tamaño del icono */
+  width: 30px; /* Ancho del icono */
+  height: 30px; /* Alto del icono */
+  border-radius: 5px;
+}
+.entranceCard {
+  padding: 15px;
+  white-space: pre-wrap;
+  width: 350px;
+  height: 450px;
+  margin: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  word-wrap: break-word; /* Forza el quiebre de palabras si es necesario */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); /* Agrega una sombra suave */
+  font-size: 1em; /* Reducir el tamaño del texto */
+  box-sizing: border-box;
+  background-image: url(../assets/image/prueba.jpg);
+}
+
+.photoPreview {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.photoPreview img {
+  width: 100%;
+}
+
+.entranceCard p {
+  text-align: justify;
+  white-space: normal;
+}
+/* Estilos para las categorías */
+.categoryEntrance {
+  font-weight: bold;
+  color: #6d3e17;
+}
+
+/* Estilos para los titulares */
+.titleEntrance,
+.owner,
+.created,
+.readMore {
+  display: flex;
+  flex-direction: column;
+  color: #412108;
+}
+
+/* Estilos para las entradas */
+.entrance {
+  height: 100px;
+  padding: 5px;
+  color: #4f3a2d;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.titleEntrance {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.Owner {
+  color: #67451c;
+}
+
+.created {
+  color: #524848;
+}
+
+.readMore {
+  color: #7a543b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: right;
+}
+
+.readMore:hover {
+  color: #ec8209;
+}
+@media only screen and (max-width: 500px) {
+  .stylesEntrancesContenedor {
+    width: 100%;
+    justify-content: center; /* Centra el contenido horizontalmente en pantallas pequeñas */
+  }
+}
