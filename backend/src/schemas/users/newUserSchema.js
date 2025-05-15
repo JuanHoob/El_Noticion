@@ -12,11 +12,13 @@ const newUserSchema = joi.object({
   password: joi
     .string()
     .pattern(
-      /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[¡!$%^&*()_+|~=`{}:";'<>¿?,.])[a-zA-Z0-9¡!$%^&*()_+|~=`{}:";'<>¿?,.]{8,}$/
+      /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+|~=`{}:";'<>¿?,./])[a-zA-Z0-9!@#$%^&*()_+|~=`{}:";'<>¿?,./]{4,}$/
     )
     .required()
     .messages(joiErrorMessages),
   email: joi.string().email().required().messages(joiErrorMessages),
 });
+
+
 
 export default newUserSchema;

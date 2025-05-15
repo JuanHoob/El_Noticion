@@ -13,9 +13,11 @@ const AuthContextProvider = ({ children }) => {
   }, [token]);
 
   useEffect(() => {
+    console.log("Token actual:", token);
     const getDataUserLogged = async () => {
       try {
         const data = await getDataUserLoggedService({ token });
+        console.log("Datos del usuario obtenidos:", data);
         setUser(data);
       } catch (error) {
         console.error("Error al obtener datos del usuario:", error);

@@ -16,6 +16,9 @@ const newUserController = async (req, res, next) => {
     // Obtenemos los datos necesarios del body.
     const { username, email, password, biography, hobbies } = req.body;
 
+     // Agregamos un log para depurar los datos recibidos.
+    console.log("Datos recibidos en el body:", req.body);
+    
     // Validamos el body con Joi.
     await validateSchemaUtil(newUserSchema, req.body);
 
